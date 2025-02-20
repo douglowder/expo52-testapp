@@ -1,0 +1,12 @@
+diff --git a/RCTAEPPlaces.podspec b/RCTAEPPlaces.podspec
+index f21effd10f1bea102f2a71a4072709989ab187c1..6ca2dcd21980374afde714fc6b13c906d15663b6 100644
+--- a/RCTAEPPlaces.podspec
++++ b/RCTAEPPlaces.podspec
+@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
+   s.source_files  = "ios/**/*.{h,m}"
+   s.requires_arc = true
+ 
+-  s.dependency "React"
++  install_modules_dependencies(s)
+   s.dependency "AEPPlaces", ">= 5.0.0", "< 6.0.0"
+ end

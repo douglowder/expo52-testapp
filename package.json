@@ -100,5 +100,16 @@
     "react-test-renderer": "18.3.1",
     "typescript": "^5.7.3"
   },
-  "private": true
+  "private": true,
+  "patchedDependencies": {
+    "@adobe/react-native-aepassurance@6.0.2": "patches/@adobe%2Freact-native-aepassurance@6.0.2.patch",
+    "@adobe/react-native-aepcore@6.0.2": "patches/@adobe%2Freact-native-aepcore@6.0.2.patch",
+    "@adobe/react-native-aepedge@6.0.2": "patches/@adobe%2Freact-native-aepedge@6.0.2.patch",
+    "@adobe/react-native-aepedgebridge@6.0.2": "patches/@adobe%2Freact-native-aepedgebridge@6.0.2.patch",
+    "@adobe/react-native-aepedgeconsent@6.0.2": "patches/@adobe%2Freact-native-aepedgeconsent@6.0.2.patch",
+    "@adobe/react-native-aepedgeidentity@6.0.2": "patches/@adobe%2Freact-native-aepedgeidentity@6.0.2.patch",
+    "@adobe/react-native-aepplaces@6.0.3": "patches/@adobe%2Freact-native-aepplaces@6.0.3.patch",
+    "@adobe/react-native-aeptarget@6.0.2": "patches/@adobe%2Freact-native-aeptarget@6.0.2.patch",
+    "@adobe/react-native-aepuserprofile@6.0.2": "patches/@adobe%2Freact-native-aepuserprofile@6.0.2.patch"
+  }
 }

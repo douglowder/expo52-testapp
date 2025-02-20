@@ -1,0 +1,12 @@
+diff --git a/RCTAEPTarget.podspec b/RCTAEPTarget.podspec
+index 5c30516bba5b3f50cecfd6a55db3413b84d1ce03..8f1578b8048b15c6c8ac98fc15d7d15ef788327c 100644
+--- a/RCTAEPTarget.podspec
++++ b/RCTAEPTarget.podspec
+@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
+   s.source_files  = "ios/**/*.{h,m}"
+   s.requires_arc = true
+ 
+-  s.dependency "React"
++  install_modules_dependencies(s)
+   s.dependency "AEPTarget", ">= 5.0.0", "< 6.0.0"
+ end

@@ -1,0 +1,12 @@
+diff --git a/RCTAEPAssurance.podspec b/RCTAEPAssurance.podspec
+index 8569628fa2c7b49c20aa969b6d01195203f3728f..5138e408f35cbe2a1ac291c1a2d29c812ef17c69 100644
+--- a/RCTAEPAssurance.podspec
++++ b/RCTAEPAssurance.podspec
+@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
+   s.source_files  = "ios/src/*.{h,m}"
+   s.requires_arc = true
+ 
+-  s.dependency "React"
++  install_modules_dependencies(s)
+   s.dependency "AEPAssurance", ">= 5.0.0", "< 6.0.0"
+ end

@@ -1,0 +1,13 @@
+diff --git a/RCTAEPCore.podspec b/RCTAEPCore.podspec
+index 4546ff518515dcff3a6ad10c177f403e124dfeec..2e5f9b897e49e8bc206e17e9894508911c78d569 100644
+--- a/RCTAEPCore.podspec
++++ b/RCTAEPCore.podspec
+@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
+ 
+   s.requires_arc = true
+ 
+-  s.dependency "React"
++  install_modules_dependencies(s)
+   s.dependency "AEPCore", ">= 5.0.0", "< 6.0.0"
+   s.dependency "AEPLifecycle", ">= 5.0.0", "< 6.0.0"
+   s.dependency "AEPIdentity", ">= 5.0.0", "< 6.0.0"

@@ -1,0 +1,12 @@
+diff --git a/RCTAEPUserProfile.podspec b/RCTAEPUserProfile.podspec
+index 9b62fdc9f8ca900db5f6c69ae42710a516001760..cd0c063f39d705784719835339c1fe296db01866 100644
+--- a/RCTAEPUserProfile.podspec
++++ b/RCTAEPUserProfile.podspec
+@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
+   s.source_files  = "ios/**/*.{h,m}"
+   s.requires_arc = true
+ 
+-  s.dependency "React"
++  install_modules_dependencies(s)
+   s.dependency "AEPUserProfile", ">= 5.0.0", "< 6.0.0"
+ end

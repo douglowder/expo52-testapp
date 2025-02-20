@@ -1,0 +1,12 @@
+diff --git a/RCTAEPEdgeIdentity.podspec b/RCTAEPEdgeIdentity.podspec
+index 4fed4d8f17884482f80effc3ce22faffcbc7681e..3123f13a1aa5fcf70c7a8d2f4c6390ae598abc01 100644
+--- a/RCTAEPEdgeIdentity.podspec
++++ b/RCTAEPEdgeIdentity.podspec
+@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
+   s.source_files  = "ios/**/*.{h,m}"
+   s.requires_arc = true
+ 
+-  s.dependency "React"
++  install_modules_dependencies(s)
+   s.dependency "AEPEdgeIdentity", ">= 5.0.0", "< 6.0.0"
+ end

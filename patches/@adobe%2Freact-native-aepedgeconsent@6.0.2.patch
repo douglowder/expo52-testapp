@@ -1,0 +1,12 @@
+diff --git a/RCTAEPEdgeConsent.podspec b/RCTAEPEdgeConsent.podspec
+index 23b5615b911263783b3cc870ea71623afe95b9a9..241416df45ff353092ea013665265833f200b14c 100644
+--- a/RCTAEPEdgeConsent.podspec
++++ b/RCTAEPEdgeConsent.podspec
+@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
+   s.source_files  = "ios/**/*.{h,m}"
+   s.requires_arc = true
+ 
+-  s.dependency "React"
++  install_modules_dependencies(s)
+   s.dependency "AEPEdgeConsent", ">= 5.0.0", "< 6.0.0"
+ end

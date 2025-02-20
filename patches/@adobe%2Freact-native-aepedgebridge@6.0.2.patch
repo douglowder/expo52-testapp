@@ -1,0 +1,12 @@
+diff --git a/RCTAEPEdgeBridge.podspec b/RCTAEPEdgeBridge.podspec
+index b4cbc52212c1ce238beaf27094cb99844c18a7e7..f4ef7d3a3ab94d747f5d00c7779d92c84a53904b 100644
+--- a/RCTAEPEdgeBridge.podspec
++++ b/RCTAEPEdgeBridge.podspec
+@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
+   s.source_files  = "ios/**/*.{h,m}"
+   s.requires_arc = true
+ 
+-  s.dependency "React"
++  install_modules_dependencies(s)
+   s.dependency "AEPEdgeBridge", ">= 5.0.0", "< 6.0.0"
+ end
