@@ -63,7 +63,7 @@
     "i18next": "^23.16.8",
     "jail-monkey": "^2.8.3",
     "lottie-react-native": "7.1.0",
-    "medallia-digital-rn": "https://repository.medallia.com/digital-npm/medallia-digital-rn/medallia-digital-rn-4.6.0.tgz",
+    "medallia-digital-rn": "./dependencies/medallia-digital-rn-4.6.0-patched.tgz",
     "moment": "^2.30.1",
     "nativewind": "^2.0.11",
     "newrelic-react-native-agent": "1.4.8",
@@ -111,5 +111,6 @@
     "@adobe/react-native-aepplaces@6.0.3": "patches/@adobe%2Freact-native-aepplaces@6.0.3.patch",
     "@adobe/react-native-aeptarget@6.0.2": "patches/@adobe%2Freact-native-aeptarget@6.0.2.patch",
     "@adobe/react-native-aepuserprofile@6.0.2": "patches/@adobe%2Freact-native-aepuserprofile@6.0.2.patch"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
