@@ -84,20 +84,7 @@ function withAdobeSDKAppDelegate(config) {
     const adobeSdkKey = process.env.EXPO_PUBLIC_ADOBE_ANALYTICS_KEY;
 
     const importStatement = `
-@import AEPRulesEngine;
 @import AEPCore;
-@import AEPLifecycle;
-@import AEPEdge;
-@import AEPEdgeIdentity;
-@import AEPEdgeBridge;
-@import AEPEdgeConsent;
-@import AEPAssurance;
-@import AEPSignal;
-@import AEPServices;
-@import AEPIdentity;
-@import AEPUserProfile;
-@import AEPPlaces;
-@import AEPTarget;
     `;
 
     const sdkInitStatement = `  // Initialize Adobe SDK
@@ -107,17 +94,6 @@ function withAdobeSDKAppDelegate(config) {
   const UIApplicationState appState = application.applicationState;
 
   [AEPMobileCore registerExtensions: @[
-      AEPMobileLifecycle.class,
-      AEPMobileEdge.class,
-      AEPMobileSignal.class,
-      AEPMobileIdentity.class,
-      AEPMobileAssurance.class,
-      AEPMobileUserProfile.class,
-      AEPMobilePlaces.class,
-      AEPMobileEdgeIdentity.class,
-      AEPMobileEdgeBridge.class,
-      AEPMobileEdgeConsent.class,
-      AEPMobileTarget.class
   ] completion:^{
       if (appState != UIApplicationStateBackground) {
        [AEPMobileCore lifecycleStart:nil];
@@ -146,6 +122,7 @@ function withAdobeSDKAppDelegate(config) {
       );
     }
 
+/*
     // Check if the Assurance statements are not there
     const assuranceLine = "  [AEPMobileAssurance startSessionWithUrl:url];";
 
@@ -174,7 +151,7 @@ function withAdobeSDKAppDelegate(config) {
     if (!contents.includes(assuranceSessionLine)) {
       contents = contents.replace(/(@end)/, `${assuranceSessionInit}\n\n$1`);
     }
-
+  */
     modResults.contents = contents;
     return cfg;
   });
@@ -195,7 +172,7 @@ function withAEPCorePodspec(config) {
       let contents = readFileSync(podspecPath, "utf-8");
 
       // Split the contents into lines
-      const lines = contents.split("\n");
+      const lines = contents.split("\n").filter(l => l.indexOf('s.ios.xcconfig') === -1);
 
       // Find the index of the line after the last dependency
       const index =
@@ -304,7 +281,7 @@ function withAdobeAnalytics(config) {
   return withPlugins(config, [
     withAdobeSDKPod,
     withAdobeSDKAppDelegate,
-    withAdobeSDKDelegate,
+    // withAdobeSDKDelegate,
     withAdobeSDKMainApplication,
     withAEPCorePodspec,
   ]);

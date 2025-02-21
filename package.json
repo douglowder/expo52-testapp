@@ -16,15 +16,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@adobe/react-native-aepassurance": "^6.0.2",
     "@adobe/react-native-aepcore": "^6.0.2",
-    "@adobe/react-native-aepedge": "^6.0.2",
-    "@adobe/react-native-aepedgebridge": "^6.0.2",
-    "@adobe/react-native-aepedgeconsent": "^6.0.2",
-    "@adobe/react-native-aepedgeidentity": "^6.0.2",
-    "@adobe/react-native-aepplaces": "^6.0.3",
-    "@adobe/react-native-aeptarget": "^6.0.2",
-    "@adobe/react-native-aepuserprofile": "^6.0.2",
     "@dev-plugins/react-native-mmkv": "^0.0.1",
     "@dev-plugins/react-navigation": "^0.0.5",
     "@dev-plugins/react-query": "^0.0.5",
@@ -102,15 +94,7 @@
   },
   "private": true,
   "patchedDependencies": {
-    "@adobe/react-native-aepassurance@6.0.2": "patches/@adobe%2Freact-native-aepassurance@6.0.2.patch",
-    "@adobe/react-native-aepcore@6.0.2": "patches/@adobe%2Freact-native-aepcore@6.0.2.patch",
-    "@adobe/react-native-aepedge@6.0.2": "patches/@adobe%2Freact-native-aepedge@6.0.2.patch",
-    "@adobe/react-native-aepedgebridge@6.0.2": "patches/@adobe%2Freact-native-aepedgebridge@6.0.2.patch",
-    "@adobe/react-native-aepedgeconsent@6.0.2": "patches/@adobe%2Freact-native-aepedgeconsent@6.0.2.patch",
-    "@adobe/react-native-aepedgeidentity@6.0.2": "patches/@adobe%2Freact-native-aepedgeidentity@6.0.2.patch",
-    "@adobe/react-native-aepplaces@6.0.3": "patches/@adobe%2Freact-native-aepplaces@6.0.3.patch",
-    "@adobe/react-native-aeptarget@6.0.2": "patches/@adobe%2Freact-native-aeptarget@6.0.2.patch",
-    "@adobe/react-native-aepuserprofile@6.0.2": "patches/@adobe%2Freact-native-aepuserprofile@6.0.2.patch"
+    "@adobe/react-native-aepcore@6.0.2": "patches/@adobe%2Freact-native-aepcore@6.0.2.patch"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

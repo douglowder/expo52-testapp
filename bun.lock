@@ -4,15 +4,7 @@
     "": {
       "name": "testapp-expo52",
       "dependencies": {
-        "@adobe/react-native-aepassurance": "^6.0.2",
         "@adobe/react-native-aepcore": "^6.0.2",
-        "@adobe/react-native-aepedge": "^6.0.2",
-        "@adobe/react-native-aepedgebridge": "^6.0.2",
-        "@adobe/react-native-aepedgeconsent": "^6.0.2",
-        "@adobe/react-native-aepedgeidentity": "^6.0.2",
-        "@adobe/react-native-aepplaces": "^6.0.3",
-        "@adobe/react-native-aeptarget": "^6.0.2",
-        "@adobe/react-native-aepuserprofile": "^6.0.2",
         "@dev-plugins/react-native-mmkv": "^0.0.1",
         "@dev-plugins/react-navigation": "^0.0.5",
         "@dev-plugins/react-query": "^0.0.5",
@@ -91,36 +83,12 @@
     },
   },
   "patchedDependencies": {
-    "@adobe/react-native-aepedgebridge@6.0.2": "patches/@adobe%2Freact-native-aepedgebridge@6.0.2.patch",
-    "@adobe/react-native-aepedge@6.0.2": "patches/@adobe%2Freact-native-aepedge@6.0.2.patch",
-    "@adobe/react-native-aepedgeconsent@6.0.2": "patches/@adobe%2Freact-native-aepedgeconsent@6.0.2.patch",
     "@adobe/react-native-aepcore@6.0.2": "patches/@adobe%2Freact-native-aepcore@6.0.2.patch",
-    "@adobe/react-native-aepedgeidentity@6.0.2": "patches/@adobe%2Freact-native-aepedgeidentity@6.0.2.patch",
-    "@adobe/react-native-aeptarget@6.0.2": "patches/@adobe%2Freact-native-aeptarget@6.0.2.patch",
-    "@adobe/react-native-aepuserprofile@6.0.2": "patches/@adobe%2Freact-native-aepuserprofile@6.0.2.patch",
-    "@adobe/react-native-aepassurance@6.0.2": "patches/@adobe%2Freact-native-aepassurance@6.0.2.patch",
-    "@adobe/react-native-aepplaces@6.0.3": "patches/@adobe%2Freact-native-aepplaces@6.0.3.patch",
   },
   "packages": {
     "@0no-co/graphql.web": ["@0no-co/graphql.web@1.1.1", "", { "peerDependencies": { "graphql": "^14.0.0 || ^15.0.0 || ^16.0.0" }, "optionalPeers": ["graphql"] }, "sha512-F2i3xdycesw78QCOBHmpTn7eaD2iNXGwB2gkfwxcOfBbeauYpr8RBSyJOkDrFtKtVRMclg8Sg3n1ip0ACyUuag=="],
 
-    "@adobe/react-native-aepassurance": ["@adobe/react-native-aepassurance@6.0.2", "", { "peerDependencies": { "@adobe/react-native-aepcore": "^6.0.0", "react-native": ">=0.60.0" } }, "sha512-+8hnqZxQ+iqOqcaPhv3PdnGvMxPKwlcTJfFcYPw+N4Qd6UbV3r5lLeyLhBxLqpT5+gJ3RsGOVLBFQzHjMb+1bA=="],
-
     "@adobe/react-native-aepcore": ["@adobe/react-native-aepcore@6.0.2", "", { "peerDependencies": { "react-native": ">=0.60.0" } }, "sha512-satSCDhwsmfXIldQv7lAjKypDkkpF7fgNijrfC02bLib2RLf1AkGOR8IRVF1zy1THkGGyW0G1K/7n2SynZFaVg=="],
-
-    "@adobe/react-native-aepedge": ["@adobe/react-native-aepedge@6.0.2", "", { "peerDependencies": { "@adobe/react-native-aepcore": "^6.0.0", "@adobe/react-native-aepedgeidentity": "^6.0.0", "react-native": ">=0.60.0" } }, "sha512-AIcK8AksHvBP9ZM8zvWcFns4SaUI43XSEICUf1FiCqxyj3ZVRax+YszQiBeuJFPvK8crP3VjTvC4c/zWYWL3Fg=="],
-
-    "@adobe/react-native-aepedgebridge": ["@adobe/react-native-aepedgebridge@6.0.2", "", { "peerDependencies": { "@adobe/react-native-aepcore": "^6.0.0", "react-native": ">=0.60.0" } }, "sha512-hXXpIO8Eli5Z4KTN9K5AIPLWsrWUgEdwL4lrVgPKNqVvZLC0X39SEibMPSBwTOg4C64jxwLna6ELtXxxjL99cA=="],
-
-    "@adobe/react-native-aepedgeconsent": ["@adobe/react-native-aepedgeconsent@6.0.2", "", { "peerDependencies": { "@adobe/react-native-aepcore": "^6.0.0", "react-native": ">=0.60.0" } }, "sha512-CMaGQBocNjUGGhgcnaF/v6LhKDgU9gAb+dqvmW8zqboznGI7p5PUI0saho9eGOjnL6z5mHZeeu2jeZz4B5z+6w=="],
-
-    "@adobe/react-native-aepedgeidentity": ["@adobe/react-native-aepedgeidentity@6.0.2", "", { "peerDependencies": { "@adobe/react-native-aepcore": "^6.0.0", "react-native": ">=0.60.0" } }, "sha512-yYHsLhHbC/zhR9yYL4d8UTmEw2CHkAmMTVt+e87caD8BJmnS8/YBw/L/pfO4l1flRBw+EVbntDlppdi1sTDEGg=="],
-
-    "@adobe/react-native-aepplaces": ["@adobe/react-native-aepplaces@6.0.3", "", { "peerDependencies": { "@adobe/react-native-aepcore": "^6.0.0", "react-native": ">=0.60.0" } }, "sha512-omDQy9Tw5TmIY1gWPWM4bNNUIpO0lpqGNLEOvcUSCRUH6ttVa6twyMIZEhvdfjFtWf92qTfSAGj6rpihEr6QNA=="],
-
-    "@adobe/react-native-aeptarget": ["@adobe/react-native-aeptarget@6.0.2", "", { "peerDependencies": { "@adobe/react-native-aepcore": "^6.0.0", "@adobe/react-native-aepedge": "^6.0.0", "react-native": ">=0.60.0" } }, "sha512-4b9IOThbxzDAO9GZfwEAMBMG+jLguRJAN5gh34tghzJQJe7IAJl6BGQWRvqS1iNjtVcQ1L5zaHhs9KgvsRflGg=="],
-
-    "@adobe/react-native-aepuserprofile": ["@adobe/react-native-aepuserprofile@6.0.2", "", { "peerDependencies": { "@adobe/react-native-aepcore": "^6.0.0", "react-native": ">=0.60.0" } }, "sha512-5btukvFy8MMr9Y9WekfZ/MJH+2jm16X/KbfW+08pKcTxQpvkJFpqcRYjgTDgTqpBAGTJWBRyqsYfG4OQEpTZZw=="],
 
     "@alloc/quick-lru": ["@alloc/quick-lru@5.2.0", "", {}, "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="],
 
